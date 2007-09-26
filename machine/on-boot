@@ -1,3 +1,8 @@
 #!/bin/sh
 
-echo on-boot completed > /tmp/log.on-boot
+
+hostname > /usr/local/etc/machines.list
+chmod 666 /usr/local/etc/machines.list
+
+
+echo `date` on-boot completed >> /etc/motd
