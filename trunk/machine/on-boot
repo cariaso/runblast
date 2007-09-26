@@ -5,4 +5,4 @@ hostname > /usr/local/etc/machines.list
 chmod 666 /usr/local/etc/machines.list
 
 
-echo `date` on-boot completed >> /etc/motd
+rm -f /etc/profile.d/krb5-workstation.\*
