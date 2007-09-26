@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo on-boot completed > /tmp/log.on-boot
