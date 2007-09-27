@@ -1,8 +1,13 @@
 #!/bin/sh
 
-
+# initialize machines.list
 hostname > /usr/local/etc/machines.list
 chmod 666 /usr/local/etc/machines.list
 
-
+# get kerberos out of the path
 rm -f /etc/profile.d/krb5-workstation.*
+
+# use mpich1 instead of mpich2
+rm -f /usr/local/bin/mpd
+rm -f /usr/local/bin/mpirun
+ln -s /usr/local/runblast/bin/mpirun /usr/local/bin/mpirun
