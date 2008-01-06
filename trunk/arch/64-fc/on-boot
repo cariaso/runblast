@@ -7,9 +7,6 @@ chmod 666 /usr/local/etc/machines.list
 
 ln -s /usr/bin/ssh /usr/bin/rsh
 
-echo Hello Harvard Biomedical HPC Attendees >> /etc/motd
-
-
 # get kerberos out of the path
 rm -f /etc/profile.d/krb5-workstation.*
 
